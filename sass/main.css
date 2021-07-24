@@ -1,0 +1,245 @@
+/*
+FONT:  font-family: 'Titillium Web', sans-serif;
+       font-family: 'Montserrat', sans-serif;
+       font-family: 'Open Sans', sans-serif;
+
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.max-center {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+header nav {
+  padding: 1rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .logo img {
+  width: 4rem;
+}
+
+header nav .hamburger {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (min-width: 50em) {
+  header nav {
+    padding: 1rem 5rem;
+  }
+}
+
+.columns {
+  padding: 2rem 2rem;
+}
+
+.columns .col-1 {
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+.columns .item {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.columns .item-1 {
+  height: 17em;
+  width: 17em;
+  border: 2.5em solid #dab9a6;
+  background: transparent;
+  -webkit-transform: translate(30em, 11em);
+          transform: translate(30em, 11em);
+}
+
+.columns .item-2 {
+  border: 1rem solid #adcce9;
+  position: relative;
+  width: 43em;
+}
+
+.columns .item-2 img {
+  width: 100%;
+}
+
+.columns .item-3 {
+  width: 21em;
+  border: 1rem solid #dab9a6;
+  -webkit-transform: translate(21em, -9em);
+          transform: translate(21em, -9em);
+}
+
+.columns .item-4 {
+  height: 8em;
+  width: 8em;
+  background: #adcce9;
+  -webkit-transform: translate(11em, -13em);
+          transform: translate(11em, -13em);
+}
+
+.columns .text-content {
+  font-size: .65rem;
+}
+
+.columns .text-content h5 {
+  font-size: 1.66em;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.columns .text-content h2 {
+  font-size: 4.4em;
+  line-height: 1.2;
+  color: #478ac9;
+  margin: .5em 0;
+}
+
+.columns .text-content p {
+  font-size: 1.5em;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.columns .text-content .p2 {
+  margin: 1em 0;
+}
+
+.columns .text-content .p2 a {
+  color: #000;
+  -webkit-text-decoration-color: #478ac9;
+          text-decoration-color: #478ac9;
+  text-underline-offset: .2em;
+}
+
+.columns .text-content .btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 1em 2em;
+  color: white;
+  background: #478ac9;
+  margin: 1em 0;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  font-weight: 600;
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.columns .text-content .btn:hover {
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+}
+
+@media (min-width: 50em) {
+  .columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0rem 5rem;
+    margin-bottom: -4rem;
+  }
+  .columns .col {
+    width: 50%;
+  }
+  .columns .text-content {
+    font-size: .8vw;
+  }
+  .columns .col-1 {
+    font-size: .8vw;
+  }
+  .columns .col-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 4rem;
+  }
+}
+
+footer {
+  background: #333333;
+  color: white;
+  font-size: .8rem;
+  text-align: center;
+  padding: 0 3rem;
+}
+
+footer p {
+  padding: 2rem 0;
+}
+
+footer .sample-text {
+  font-size: 1em;
+  padding-top: 3rem;
+}
+
+footer .credit {
+  font-size: .9em;
+}
+
+footer .credit a {
+  color: #adcce9;
+  text-underline-offset: .2em;
+}
+
+@media (min-width: 50em) {
+  footer {
+    font-size: 1.1vw;
+  }
+  footer .sample-text {
+    width: 35%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 120rem) {
+  .columns .col-1 {
+    font-size: 12px;
+  }
+  .columns .text-content {
+    font-size: 14px;
+  }
+  footer {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,229 @@
+/*
+FONT:  font-family: 'Titillium Web', sans-serif;
+       font-family: 'Montserrat', sans-serif;
+       font-family: 'Open Sans', sans-serif;
+
+*/
+
+// Colors
+$clr-01:#adcce9;
+$clr-02:#dab9a6;
+$clr-03:#333333;
+$clr-04:#478ac9;
+// Reset
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Utilities
+.max-center {
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+// General Styling
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    font-family: 'Titillium Web', sans-serif
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+// Section Styling
+header {
+    nav {
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo {
+            img {
+                width: 4rem;
+            }
+        }
+        .hamburger {
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (min-width:50em) {
+    header {
+        nav {
+            padding: 1rem 5rem;
+        }
+    }
+}
+
+// section
+.columns {
+    padding: 2rem 2rem;
+    .col-1 {
+        font-size: 1.5vw;
+        text-align: center;
+    }
+    .item {
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .item-1 {
+        height: 17em;
+        width: 17em;
+        border: 2.5em solid #dab9a6;
+        background: transparent;
+        transform: translate(30em, 11em);
+        // top: 7rem;
+        // left: 28rem;
+    }
+    .item-2 {
+        border: 1rem solid $clr-01;
+        position: relative;
+        width: 43em;
+        img {
+            width: 100%;
+        }
+    }
+    .item-3 {
+        width: 21em;
+        border: 1rem solid #dab9a6;
+        transform: translate(21em, -9em);
+        // bottom: -24rem;
+        // left: 25.5rem;
+    }
+    .item-4 {
+        height: 8em;
+        width: 8em;
+        background: #adcce9;
+        // bottom: -26rem;
+        // left: 14rem;
+        transform: translate(11em, -13em)
+    }
+    .text-content {
+        font-size: .65rem;
+        h5 {
+            font-size: 1.66em;
+            letter-spacing: 3px;
+            font-weight: 400;
+        }
+        h2 {
+            font-size: 4.4em;
+            line-height: 1.2;
+            color: $clr-04;
+            margin: .5em 0;
+        }
+        p {
+            font-size: 1.5em;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+        .p2 {
+            margin: 1em 0;
+            a {
+                color: #000;
+                text-decoration-color: $clr-04;
+                text-underline-offset: .2em;
+            }
+        }
+        .btn {
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 1em 2em;
+            color: white;
+            background: $clr-04;
+            margin: 1em 0;
+            font-size: 1.4em;
+            letter-spacing: 2px;
+            font-weight: 600;
+            filter: brightness(120%);
+            transition: all .3s ease;
+            &:hover {
+                filter: brightness(100%);
+            }
+        }
+    }
+}
+
+@media (min-width:50em) {
+    .columns {
+        display: flex;
+        padding: 0rem 5rem;
+        margin-bottom: -4rem;
+        .col {
+            width: 50%;
+        }
+        .text-content {
+            font-size: .8vw;
+        }
+        .col-1 {
+            font-size: .8vw;
+        }
+        .col-2 {
+            display: flex;
+            align-items: center;
+            padding: 0 4rem;
+        }
+    }
+}
+
+// footer
+footer {
+    background: $clr-03;
+    color: white;
+    font-size: .8rem;
+    text-align: center;
+    padding: 0 3rem;
+    p {
+        padding: 2rem 0;
+    }
+    .sample-text {
+        font-size: 1em;
+        padding-top: 3rem;
+    }
+    .credit {
+        font-size: .9em;
+        a {
+            color: $clr-01;
+            text-underline-offset: .2em;
+        }
+    }
+}
+
+@media (min-width:50em) {
+    footer {
+        font-size: 1.1vw;
+        .sample-text {
+            width: 35%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (min-width:120rem) {
+    .columns {
+        .col-1 {
+            font-size: 12px;
+        }
+        .text-content {
+            font-size: 14px;
+        }
+    }
+    footer {
+        font-size: 20px;
+    }
+}
